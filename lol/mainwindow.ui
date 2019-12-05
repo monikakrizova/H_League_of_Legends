@@ -1,0 +1,1625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>955</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget_RemoveChamp">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>891</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Find champion</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_search">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>410</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>210</y>
+        <width>311</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_champname">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>150</y>
+        <width>291</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>League of Legends</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pic">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>30</y>
+        <width>161</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>logo.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>541</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QCheckBox" name="CB_controller">
+           <property name="text">
+            <string>controller</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_fighter">
+           <property name="text">
+            <string>fighter</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_mage">
+           <property name="text">
+            <string>mage</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_marksman">
+           <property name="text">
+            <string>marksman</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_slayer">
+           <property name="text">
+            <string>slayer</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_tank">
+           <property name="text">
+            <string>tank</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_specialist">
+           <property name="text">
+            <string>specialist</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QCheckBox" name="CB_top">
+           <property name="text">
+            <string>top</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_jungle">
+           <property name="text">
+            <string>jungle</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_mid">
+           <property name="text">
+            <string>mid</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_bot">
+           <property name="text">
+            <string>bot</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_support">
+           <property name="text">
+            <string>support</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QCheckBox" name="CB_melee">
+           <property name="text">
+            <string>melee</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="CB_ranged">
+           <property name="text">
+            <string>ranged</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>29</y>
+        <width>541</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Class&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="contextMenuPolicy">
+          <enum>Qt::DefaultContextMenu</enum>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Role&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_15">
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Attribute&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>410</y>
+        <width>211</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_11">
+       <item>
+        <widget class="QLabel" name="label_14">
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Minimum winrate&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QCheckBox" name="CB_min_winrate">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>minimum winrate</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="min_winrate">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::PreventContextMenu</enum>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Add champion</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_add">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>400</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>70</y>
+        <width>161</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QRadioButton" name="RB_top">
+         <property name="text">
+          <string>top</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RB_jungle">
+         <property name="text">
+          <string>jungle</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RB_mid">
+         <property name="text">
+          <string>mid</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RB_bot">
+         <property name="text">
+          <string>bot</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RB_support">
+         <property name="text">
+          <string>support</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>40</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Role</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>70</y>
+        <width>161</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QRadioButton" name="RB_controller">
+         <property name="text">
+          <string>controller</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RB_fighter">
+         <property name="text">
+          <string>fighter</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RB_mage">
+         <property name="text">
+          <string>mage</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RB_marksman">
+         <property name="text">
+          <string>marksman</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RB_slayer">
+         <property name="text">
+          <string>slayer</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RB_tank">
+         <property name="text">
+          <string>tank</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RB_specialist">
+         <property name="text">
+          <string>specialist</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>40</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Class</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>40</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_addname">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>70</y>
+        <width>141</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>130</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Winrate</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>70</y>
+        <width>151</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QRadioButton" name="RB_melee">
+         <property name="text">
+          <string>melee</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RB_ranged">
+         <property name="text">
+          <string>ranged</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>40</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Attribute</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_winrate">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>170</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Choose your team</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>621</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetNoConstraint</enum>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>top</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>jungle</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>mid</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>bot</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>support</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+           <item>
+            <widget class="QLabel" name="pic_top">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="pic_jungle">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="pic_mid">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="pic_bot">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="pic_support">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QComboBox" name="comboBox_top">
+           <property name="currentText">
+            <string>Aatrox</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Aatrox</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Camille</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Darius</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dr.Mundo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Fiora</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Gangplank</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Garen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Gnar</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cho'Gath</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Illaoi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Irelia</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Jarvan IV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Jayce</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kayle</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kennen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kled</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Malphite</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Maokai</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Mordekaiser</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Nasus</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Olaf</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ornn</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Pantheon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Poppy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Quinn</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Renekton</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Riven</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rumble</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Shen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Singed</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sion</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Teemo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Tryndamere</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Urgot</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Yorick</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_jungle">
+           <item>
+            <property name="text">
+             <string>Amumu</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Elise</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Evelynn</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Fiddlesticks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Gragas</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Graves</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hecarim</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ivern</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Jax</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kayn</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kha'Zix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kindred</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lee Sin</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Master Yi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Nidalee</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Nocturne</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Nunu &amp; Willump</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rammus</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rek'Sai</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rengar</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sejuani</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Shaco</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Shyvana</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Skarner</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sylas</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Trundle</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Udyr</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Vi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Volibear</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Warwick</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Wukong</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Xin Zhao</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Zac</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_mid">
+           <item>
+            <property name="text">
+             <string>Ahri</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Akali</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Anivia</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Annie</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Aurelion Sol</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Azir</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Brand</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cassiopeia</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diana</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ekko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Fizz</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Galio</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Heimerdinger</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Karthus</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kassadin</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Katarina</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>LeBlanc</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lissandra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lux</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Malzahar</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Orianna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Qiyana</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ryze</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Swain</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Syndra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Taliyah</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Talon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Twisted Fate</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Veigar</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Vel'Koz</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Viktor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Vladimir</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Xerath</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Yasuo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Zed</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ziggs</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Zoe</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_bot">
+           <item>
+            <property name="text">
+             <string>Ashe</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Caitlyn</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Corki</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Draven</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ezreal</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Jhin</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Jinx</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kai'Sa</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kalista</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kog'Maw</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lucian</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Miss Fortune</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sivir</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Tristana</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Twitch</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Vayne</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Xayah</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_support">
+           <item>
+            <property name="text">
+             <string>Alistar</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Bard</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Blitzcrank</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Braum</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Janna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Karma</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Leona</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lulu</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Morgana</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Nami</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Nautilus</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Neeko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Pyke</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rakan</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sona</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Soraka</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Tahm Kench</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Taric</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Thresh</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Yuumi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Zilean</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Zyra</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>450</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Count winrate</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_winrate_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>453</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Remove Champion</string>
+     </attribute>
+     <widget class="QTableView" name="tableView_remove">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>701</width>
+        <height>371</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_refresh">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>450</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>701</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Double-click on the name to remove champion from database&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>955</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuLeague_of_Legends">
+    <property name="title">
+     <string>League of Legends</string>
+    </property>
+   </widget>
+   <addaction name="menuLeague_of_Legends"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
